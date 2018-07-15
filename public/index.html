@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="link/Bootstrap 3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="icons/css/fontawesome-all.min.css">
+
+	<script src="link/JQuery/jquery-3.3.1.min.js"></script>
+	<script src="link/Bootstrap 3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="body_m">
+		<div class="header">
+			NTQ Solution Admin
+		</div>
+		<div class="main">
+			<div class="main__left">
+				<p class="main__left__tit">Hi, Admin</p>
+
+				<div class="main__left__user">
+					<div class="main__left__user__avatar">
+					<img src="avatar.png" alt="">
+					</div>
+					<div class="main__left__user__ctrl">
+						<p>
+							<i class="fas fa-cog"></i>
+							Update Profile
+						</p>
+						<p>
+							<i class="fas fa-share"></i>
+							Log Out
+						</p>
+					</div>
+				</div>
+
+				<ul class="main__left__menu">
+					<li><a href="#" class="js_menu_catergory"><i class="fas fa-th-large"></i>Catergories</a></li>
+					<li><a href="#" class="js_menu_product"><i class="fas fa-list-ul"></i>Products</a></li>
+					<li><a href="#" class="js_menu_user"><i class="fas fa-user-alt"></i>Users</a></li>
+				</ul>
+			</div>
+
+			<!-- ================Catergory===================== -->
+			<div class="main__right-catergory dp_none js_catergory">
+				<p class="main__right-catergory__breadcum">List Catergories</p>
+				<div class="main__right-catergory__list dp_none js_catergory_list">
+					<div class="main__right-catergory__content">
+						<div class="main__right-catergory__content__search">
+							<input type="text" name="" placeholder="Some text for search ...">
+							<button type="button" class="main__right-catergory__content__button">Search</button>
+						</div>
+						<!-- ==================== -->
+						<div class="main__right-catergory__content__management">
+							<div class="main__right-catergory__content__management__head"><i class="fas fa-th-large"></i>Catergories</div>
+							<button type="button" class="main__right-catergory__content__management__button js_add-catergory">Add Catergories</button>
+							<!-- ------------ -->
+							<table>
+								<tr>
+									<th><input type="checkbox" name=""></th>
+									<th>ID</th>
+									<th>Catergory name</th>
+									<th>Active</th>
+									<th>Time Created</th>
+									<th>Time Update</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>158</td>
+									<td>Catergory 8</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>157</td>
+									<td>Catergory 7</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>156</td>
+									<td>Catergory 6</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>155</td>
+									<td>Catergory 5</td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>40</td>
+									<td>Catergory 4</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>39</td>
+									<td>Catergory 3</td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>3</td>
+									<td>Catergory 2</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>2</td>
+									<td>Catergory 1</td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>1</td>
+									<td>...</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editCat-btn">Edit</button></td>
+								</tr>
+							</table>
+							<!-- ------------ -->
+							<button type="button" class="main__right-catergory__content__management__button_accept">Active</button>
+							<button type="button" class="main__right-catergory__content__management__button_deaccept">Deavtive</button>
+						</div>
+						<img src="line.png" alt="">
+					</div>
+				</div>
+				<div class="main__right-catergory__edit-add dp_none js_catergory_add">
+					<div class="main__right-catergory__edit-add__head"><i class="fas fa-th-large"></i>Catergories Management</div>
+					<div class="main__right-catergory__edit-add__content">
+						<div class="main__right-catergory__edit-add__content__name">
+							<div class="main__right-catergory__edit-add__content__name__label">
+								<label for="">Catergory Name:</label>	
+							</div>
+							<div class="main__right-catergory__edit-add__content__name__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field catergory name is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-catergory__edit-add__content__active">
+							<div class="main__right-catergory__edit-add__content__name__label">
+								<label for="">Active:</label>	
+							</div>
+							<div class="main__right-catergory__edit-add__content__name__input">
+								<input list="list_active">
+								<datalist id="list_active">
+								    <option value="Active">
+								    <option value="Deactive">
+								</datalist>
+							</div>
+						</div>
+						<div class="main__right-catergory__edit-add__content__submit">
+							<button type="button" class="js_add-catergory_btn">Add</button>
+						</div>
+					</div>
+					<img src="line.png" alt="">
+				</div>
+				<div class="main__right-catergory__edit-edit dp_none js_catergory_edit">
+					<div class="main__right-catergory__edit-edit__head"><i class="fas fa-th-large"></i>Catergories Management</div>
+					<div class="main__right-catergory__edit-edit__content">
+						<div class="main__right-catergory__edit-edit__content__name">
+							<div class="main__right-catergory__edit-edit__content__name__label">
+								<label for="">Catergory Name:</label>	
+							</div>
+							<div class="main__right-catergory__edit-edit__content__name__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field catergory name is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-catergory__edit-edit__content__active">
+							<div class="main__right-catergory__edit-add__content__name__label">
+								<label for="">Active:</label>	
+							</div>
+							<div class="main__right-catergory__edit-edit__content__name__input">
+								<input list="list_active">
+								<datalist id="list_active">
+								    <option value="Active">
+								    <option value="Deactive">
+								</datalist>
+							</div>
+						</div>
+						<div class="main__right-catergory__edit-edit__content__submit">
+							<button type="button" class="js_edit-catergory_btn">Edit</button>
+						</div>
+					</div>
+					<img src="line.png" alt="">
+				</div>
+			</div>
+			<!-- End main -- catergory -->
+
+			<!-- Main__right -- Products -->
+			<div class="main__right-product dp_none js_product">
+				<p class="main__right-product__breadcum">List Products</p>
+				<div class="main__right-product__list dp_none js_product_list">
+					<div class="main__right-product__content">
+						<div class="main__right-product__content__search">
+							<input type="text" name="" placeholder="Some text for search ...">
+							<button type="button" class="main__right-product__content__button">Search</button>
+						</div>
+						<!-- ==================== -->
+						<div class="main__right-product__content__management">
+							<div class="main__right-product__content__management__head"><i class="fas fa-list-ul"></i>Products</div>
+							<button type="button" class="main__right-product__content__management__button js_add-product">Add Products</button>
+							<!-- ------------ -->
+							<table>
+								<tr>
+									<th><input type="checkbox" name=""></th>
+									<th>ID</th>
+									<th>Products name</th>
+									<th>Price</th>
+									<th>Active</th>
+									<th>Time Created</th>
+									<th>Time Update</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>158</td>
+									<td>Catergory 8</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>157</td>
+									<td>Catergory 7</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>156</td>
+									<td>Catergory 6</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>155</td>
+									<td>Catergory 5</td>
+									<td></td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>40</td>
+									<td>Catergory 4</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>39</td>
+									<td>Catergory 3</td>
+									<td></td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>3</td>
+									<td>Catergory 2</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>2</td>
+									<td>Catergory 1</td>
+									<td></td>
+									<td>Deactive</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name=""></td>
+									<td>1</td>
+									<td>...</td>
+									<td></td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+									<td><button class="js_editPro-btn">Edit</button></td>
+								</tr>
+							</table>
+							<!-- ------------ -->
+							<button type="button" class="main__right-product__content__management__button_accept">Active</button>
+							<button type="button" class="main__right-product__content__management__button_deaccept">Deavtive</button>
+							<!-- <ul class="list-inline">
+							  	<li><a href="#">Previous</a></li>
+							 	<li><a href="#">1</a></li>
+							 	<li><a href="#">2</a></li>
+							  	<li><a href="#">3</a></li>
+							  	<li><a href="#">Next</a></li>
+							</ul> -->
+							<div class="main__right-product__content__management__pager">
+								<a href="#" title="" class="none">Previous</a>
+								<a href="#" title="" class="active">1</a>
+								<a href="#" title="" class="">2</a>
+								<a href="#" title="" class="">3</a>
+								<a href="#" title="" class="">Next</a>
+							</div>
+						</div>
+						<img src="line.png" alt="">
+					</div>
+				</div>
+				<div class="main__right-product__edit-add dp_none js_product_add">
+					<div class="main__right-product__edit-add__head"><i class="fas fa-th-large"></i>Products Management</div>
+					<div class="main__right-product__edit-add__content">
+						<div class="main__right-product__edit-add__content__name">
+							<div class="main__right-product__edit-add__content__name__label">
+								<label for="">Product Name:</label>	
+							</div>
+							<div class="main__right-product__edit-add__content__name__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field product name is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-add__content__price">
+							<div class="main__right-product__edit-add__content__price__label">
+								<label for="">Price:</label>	
+							</div>
+							<div class="main__right-product__edit-add__content__price__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field price is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-add__content__description">
+							<div class="main__right-product__edit-add__content__description__label">
+								<label for="">Description:</label>	
+							</div>
+							<div class="main__right-product__edit-add__content__description__input">
+								<input type="text" placeholder="textarea field placeholder ...">
+								<p>Field description is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-add__content__upload_img">
+							<div class="main__right-product__edit-add__content__description__label">
+								<label for="">Upload Image:</label>	
+							</div>
+							<div class="main__right-product__edit-add__content__description__input">
+								<button type="button">Choose file</button> No file chosen<br>
+								<button type="button">Choose file</button> No file chosen<br>
+								<button type="button">Choose file</button> No file chosen
+							</div>
+						</div>
+						<div class="main__right-product__edit-add__content__active">
+							<div class="main__right-product__edit-add__content__name__label">
+								<label for="">Active:</label>	
+							</div>
+							<div class="main__right-product__edit-add__content__name__input">
+								<input list="list_active">
+								<datalist id="list_active">
+								    <option value="Active">
+								    <option value="Deactive">
+								</datalist>
+							</div>
+						</div>
+						<div class="main__right-product__edit-add__content__submit">
+							<button type="button" class="js_add-product_btn">Add</button>
+						</div>
+					</div>
+					<img src="line.png" alt="">
+				</div>
+				<div class="main__right-product__edit-edit dp_none js_product_edit">
+					<div class="main__right-product__edit-edit__head"><i class="fas fa-th-large"></i>Products Management</div>
+					<div class="main__right-product__edit-edit__content">
+						<div class="main__right-product__edit-edit__content__name">
+							<div class="main__right-product__edit-edit__content__name__label">
+								<label for="">Product Name:</label>	
+							</div>
+							<div class="main__right-product__edit-edit__content__name__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field product name is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-edit__content__price">
+							<div class="main__right-product__edit-edit__content__price__label">
+								<label for="">Price:</label>	
+							</div>
+							<div class="main__right-product__edit-edit__content__price__input">
+								<input type="text" placeholder="some text value ...">
+								<p>Field price is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-edit__content__description">
+							<div class="main__right-product__edit-edit__content__description__label">
+								<label for="">Description:</label>	
+							</div>
+							<div class="main__right-product__edit-edit__content__description__input">
+								<input type="text" placeholder="textarea field placeholder ...">
+								<p>Field description is not empty.</p>
+							</div>
+						</div>
+						<div class="main__right-product__edit-edit__content__upload_img">
+							<div class="main__right-product__edit-edit__content__description__label">
+								<label for="">Upload Image:</label>	
+							</div>
+							<div class="main__right-product__edit-edit__content__description__input">
+								<button type="button">Choose file</button> No file chosen<br>
+								<button type="button">Choose file</button> No file chosen<br>
+								<button type="button">Choose file</button> No file chosen
+							</div>
+						</div>
+						<div class="main__right-product__edit-edit__content__active">
+							<div class="main__right-product__edit-edit__content__name__label">
+								<label for="">Active:</label>	
+							</div>
+							<div class="main__right-product__edit-edit__content__name__input">
+								<input list="list_active">
+								<datalist id="list_active">
+								    <option value="Active">
+								    <option value="Deactive">
+								</datalist>
+							</div>
+						</div>
+						<div class="main__right-product__edit-edit__content__submit">
+							<button type="button" class="js_edit-product_btn">Edit</button>
+						</div>
+					</div>
+					<img src="line.png" alt="">
+				</div>
+			</div>
+			<!-- End main__right -- products -->
+		</div>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>

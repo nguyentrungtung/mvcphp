@@ -1,0 +1,834 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.dp_none{
+	display: none;
+}
+
+.body_m{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	background: #eee;
+	border: 1px solid #ada8a8;
+	.header{
+		background : #4a6c91;
+		color: #fff;
+		font-size: 16px;
+		font-family: arial;
+		padding: 10px 10px;
+	}
+	.main{
+		width: 100%;
+		height: auto;
+		background: #eee;
+		display: flex;
+		font-size: 12px;
+		.main__left{
+			width: 20%;
+			&__tit{
+				border: 1px solid #cbcbcb;
+				padding: 5px 10px;
+				margin: 0;
+			}
+			&__user{
+				display: flex;
+				padding: 4px;
+				border-right: 1px solid #cbcbcb;
+				background: #f4f4f4;
+				&__avatar{
+					width: 60px;
+					height: 60px;
+					line-height: 60px;
+					border: 1px solid #ada8a8;
+					padding-top: 3px;
+					img{
+						width: 50px;
+						height: 50px;
+						display: block;
+						margin: auto;
+					}
+				}
+				&__ctrl{
+					padding-left: 7px;
+					padding-top: 5px;
+					p{
+						margin: 0;
+					}
+				}
+			}
+			&__menu{
+				list-style: none;
+				padding: 0;
+				font-size: 14px;
+				li{
+					padding: 10px 10px;
+					background: #4a6c91;
+					color: #fff;
+					border: 1px solid #436891;
+					a{
+						color: #fff;
+					}
+					i{
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+		/*========================================================*/
+		.main__right-catergory{
+			width: 80%;
+			&__breadcum{
+				border: 1px solid #cbcbcb;
+				padding: 5px 10px;
+				margin: 0;
+			}
+			&__content{
+				padding: 25px;
+				&__search{
+					background: #fff;
+					box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+					padding: 10px;
+					position: relative;
+					margin-bottom: 25px;
+					input{
+						width: 85%;
+						padding: 7px;
+						color: #ada8a8;
+						margin-right: 2%;
+						border: 1px solid #cbcbcb;
+						border-radius: 5px;
+					}
+					button{
+						position: absolute;
+						padding: 7px;
+						width: 10%;
+						right: 10px;
+						background: #52759b;
+						border: 1px solid #436891;
+						border-radius: 5px;
+						color: #fff;
+					}
+				}
+				&__management{
+					width: 100%;
+					height: auto;
+					border: 1px solid #cbcbcb;
+					margin-bottom: 20px;
+					border-radius: 5px;
+					background: #fff;
+					&__head{
+						padding: 10px;
+						background: #4e7096;
+						color: #fff;
+						font-size: 14px;
+						margin-bottom: 10px;
+						i{
+							margin-right: 10px;
+						}
+					}
+					&__button{
+						color: #fff;
+						padding: 6px;
+						font-size: 12px;
+						background: #4e7096;
+						border: 1px solid #436891;
+						border-radius: 2px;
+						margin-left: 10px;
+						margin-bottom: 20px;
+					}
+					table{
+						margin-bottom: 10px;
+						width: 100%;
+						height: auto;
+						border: 1px solid #cbcbcb;
+						text-align: left;
+						tr{
+							height: 40px;
+							border-bottom: 1px solid #cbcbcb;
+							th, td{
+								border-right: 1px solid #cbcbcb;
+								padding-left: 10px;
+							}
+						}
+						tr:first-child{
+							height: 20px;
+							th{
+								text-align: left;
+							}
+						}
+						button{
+							color: #fff;
+							background: #4e7096;
+							padding: 5px 10px;
+							border: none;
+							border-radius: 2px;
+						}
+						tr:nth-child(2n+1){
+							background: #eee;
+						}
+					}
+					&__button_accept{
+						margin-bottom: 10px;
+						width: 70px;
+						height: 30px;
+						/*line-height: 30px;*/
+						color: #fff;
+						text-align: center;
+						border: none;
+						border-radius: 2px;
+						background: #5dbb5d;
+						margin-left: 10px;
+					}
+					&__button_deaccept{
+						margin-bottom: 10px;
+						width: 70px;
+						height: 30px;
+						/*line-height: 30px;*/
+						color: #fff;
+						text-align: center;
+						border: none;
+						border-radius: 2px;
+						background: #dc504b;
+					}
+				}
+				img{
+					width: 100%;
+				}
+			}
+			.main__right-catergory__edit-add{
+				width: 100%;
+				height: auto;
+				padding: 25px;
+				&__head{
+					padding: 10px;
+					background: #4e7096;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 2px;
+					i{
+						margin-right: 10px;
+					}
+				}
+				&__content{
+					border: 1px solid #cbcbcb;
+					height: auto;
+					width: 100%;
+					background: #fff;
+					&__name{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__active{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+						}
+					}
+					&__submit{
+						padding: 20px 10px;
+						button{
+							padding: 7px 15px;
+							background: #5dbb5d;
+							border: none;
+							border-radius: 2px;
+							color: #fff;
+						}
+					}
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+			.main__right-catergory__edit-edit{
+				width: 100%;
+				height: auto;
+				padding: 25px;
+				&__head{
+					padding: 10px;
+					background: #4e7096;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 2px;
+					i{
+						margin-right: 10px;
+					}
+				}
+				&__content{
+					border: 1px solid #cbcbcb;
+					height: auto;
+					width: 100%;
+					background: #fff;
+					&__name{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__active{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+						}
+					}
+					&__submit{
+						padding: 20px 10px;
+						button{
+							padding: 7px 15px;
+							background: #5dbb5d;
+							border: none;
+							border-radius: 2px;
+							color: #fff;
+						}
+					}
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		/*========= main-right -- products=========*/
+
+		.main__right-product{
+			width: 80%;
+			&__breadcum{
+				border: 1px solid #cbcbcb;
+				padding: 5px 10px;
+				margin: 0;
+			}
+			&__content{
+				padding: 25px;
+				&__search{
+					background: #fff;
+					box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+					padding: 10px;
+					position: relative;
+					margin-bottom: 25px;
+					input{
+						width: 85%;
+						padding: 7px;
+						color: #ada8a8;
+						margin-right: 2%;
+						border: 1px solid #cbcbcb;
+						border-radius: 5px;
+					}
+					button{
+						position: absolute;
+						padding: 7px;
+						width: 10%;
+						right: 10px;
+						background: #52759b;
+						border: 1px solid #436891;
+						border-radius: 5px;
+						color: #fff;
+					}
+				}
+				&__management{
+					width: 100%;
+					height: auto;
+					border: 1px solid #cbcbcb;
+					margin-bottom: 20px;
+					border-radius: 5px;
+					background: #fff;
+					&__head{
+						padding: 10px;
+						background: #4e7096;
+						color: #fff;
+						font-size: 14px;
+						margin-bottom: 10px;
+						i{
+							margin-right: 10px;
+						}
+					}
+					&__button{
+						color: #fff;
+						padding: 6px;
+						font-size: 12px;
+						background: #4e7096;
+						border: 1px solid #436891;
+						border-radius: 2px;
+						margin-left: 10px;
+						margin-bottom: 20px;
+					}
+					table{
+						margin-bottom: 10px;
+						width: 100%;
+						height: auto;
+						border: 1px solid #cbcbcb;
+						text-align: left;
+						tr{
+							height: 40px;
+							border-bottom: 1px solid #cbcbcb;
+							th, td{
+								border-right: 1px solid #cbcbcb;
+								padding-left: 10px;
+							}
+						}
+						tr:first-child{
+							height: 20px;
+							th{
+								text-align: left;
+							}
+						}
+						button{
+							color: #fff;
+							background: #4e7096;
+							padding: 5px 10px;
+							border: none;
+							border-radius: 2px;
+						}
+						tr:nth-child(2n+1){
+							background: #eee;
+						}
+					}
+					&__button_accept{
+						display: inline-block;
+						margin-bottom: 10px;
+						width: 70px;
+						height: 30px;
+						/*line-height: 30px;*/
+						color: #fff;
+						text-align: center;
+						border: none;
+						border-radius: 2px;
+						background: #5dbb5d;
+						margin-left: 10px;
+					}
+					&__button_deaccept{
+						display: inline-block;
+						margin-bottom: 10px;
+						width: 70px;
+						height: 30px;
+						/*line-height: 30px;*/
+						color: #fff;
+						text-align: center;
+						border: none;
+						border-radius: 2px;
+						background: #dc504b;
+					}
+
+					&__pager{
+						text-align: right;
+						a{
+							display: inline-block;
+							padding: 5px 10px;
+							border: 1px solid #cbcbcb;
+							border-radius: 2px;
+							margin-bottom: 40px;
+							margin-right: 10px;
+							color: #cbcbcb;
+						}
+						a.active{
+							background: gray;
+							color: #fff;
+						}
+						a.none{
+							color: #eee;
+							border-color: #eee;
+						}
+					}
+				}
+				img{
+					width: 100%;
+				}
+			}
+			.main__right-product__edit-add{
+				width: 100%;
+				height: auto;
+				padding: 25px;
+				&__head{
+					padding: 10px;
+					background: #4e7096;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 2px;
+					i{
+						margin-right: 10px;
+					}
+				}
+				&__content{
+					border: 1px solid #cbcbcb;
+					height: auto;
+					width: 100%;
+					background: #fff;
+					&__name{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__price{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__description{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								height: 100px;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__upload_img{
+						display: flex;
+						width: 100%;
+						height: auto;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						button{
+							margin-bottom: 10px;
+						}
+					}
+					&__active{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+						}
+					}
+					&__submit{
+						padding: 20px 10px;
+						button{
+							padding: 7px 15px;
+							background: #5dbb5d;
+							border: none;
+							border-radius: 2px;
+							color: #fff;
+						}
+					}
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+			.main__right-product__edit-edit{
+				width: 100%;
+				height: auto;
+				padding: 25px;
+				&__head{
+					padding: 10px;
+					background: #4e7096;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 2px;
+					i{
+						margin-right: 10px;
+					}
+				}
+				&__content{
+					border: 1px solid #cbcbcb;
+					height: auto;
+					width: 100%;
+					background: #fff;
+					&__name{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__price{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__description{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								height: 100px;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+							p{
+								font-style: italic;
+								color: red;
+							}
+						}
+					}
+					&__upload_img{
+						display: flex;
+						width: 100%;
+						height: auto;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						button{
+							margin-bottom: 10px;
+						}
+					}
+					&__active{
+						width: 100%;
+						height: auto;
+						display: flex;
+						padding: 20px 10px;
+						border-bottom: 1px solid #cbcbcb;
+						&__label{
+							width: 30%;
+							padding-top: 7px;
+						}
+						&__input{
+							width: 70%;
+							input{
+								width: 100%;
+								margin-bottom: 10px;
+								padding: 7px 10px;
+								border: 1px solid #cbcbcb;
+								border-radius: 2px;
+							}
+						}
+					}
+					&__submit{
+						padding: 20px 10px;
+						button{
+							padding: 7px 15px;
+							background: #5dbb5d;
+							border: none;
+							border-radius: 2px;
+							color: #fff;
+						}
+					}
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+
+
+		/*display - none main__right -- Catergories*/
+		/*.main__right-catergory__list{
+			display: none;
+		}
+
+		.main__right-catergory__edit-add{
+			display: none;
+
+		}
+		.main__right-catergory__edit-edit{
+			display: none;
+
+		}
+		.main__right-catergory{
+			display: none;
+		}
+		
+		
+		.main__right-product__list{
+			display: none;
+		}
+		
+		.main__right-product__edit-add{
+			display: none;
+		}
+
+		.main__right-product__edit-edit{
+			display: none;
+		}
+
+		.main__right-product{
+			display: none;
+		}*/
+	}
+}
